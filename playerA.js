@@ -10,8 +10,12 @@ export default class JugadorA{
         this._actual= this._actual + lan;
         let caminar = t.checkPo(this._actual);
 
-        this._actual = this._actual + caminar;
+        if(this._actual >= 100){
+            this._actual = 100;
+        } else {
+            this._actual = this._actual + caminar;
+        }
 
-
+        
     }
 }

@@ -54,9 +54,17 @@ class Principal{
             this._pB.play(this._dado, this._tablero);
 
             console.log('jA' + this._pA._actual + ' jB' + this._pB._actual);
-        }    
+        } 
+        if(this._pA._actual >= 100){
+            console.log('Eljugador A es el ganador')
+        }else{
+            console.log('El jugador B es el ganador');
+        }
+
+
         
     }
+
     
     
     
